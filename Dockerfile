@@ -97,11 +97,11 @@ RUN ln -s /etc/apache2/mods-available/include.load /etc/apache2/mods-enabled/ &&
 #
 # Get gbdb data from UCSC
 #
-RUN mkdir -p /gbdb/hg38 && mkdir -p /gbdb/visiGene && \
-    rsync -avzP --delete --max-delete=20 rsync://hgdownload.cse.ucsc.edu/gbdb/hg38/hg38.2bit /gbdb/hg38/hg38.2bit
+RUN mkdir -p /gbdb/hg38 && mkdir -p /gbdb/visiGene 
+#RUN mkdir -p /gbdb/hg38 && mkdir -p /gbdb/visiGene && \
+#    rsync -avzP --delete --max-delete=20 rsync://hgdownload.cse.ucsc.edu/gbdb/hg38/hg38.2bit /gbdb/hg38/hg38.2bit
 
 RUN chown -R www-data.www-data /var/www /gbdb
-
 
 #
 # Start apache
