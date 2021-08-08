@@ -83,3 +83,4 @@ download the new files according the reported error information:
 rsync -avP --delete --max-delete=20 rsync://hgdownload.soe.ucsc.edu/mysql/hg38 /my/data/path/
 
 
+see more at :https://andreirozanski.com/2019/11/30/ucsc-genome-browser-docker-solution-for-a-self-hosted-instance/
