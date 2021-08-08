@@ -68,7 +68,7 @@ docker images
 
 ###how to using mysqlworkbench to add my tracks to browser
 1.change the grp table in hg38/mm10 database
-2.add tracks into trackDb table,for example:
+2.add tracks into trackDb table, for example:
 
 bigDataUrl /gbdb/userData/mydata/*_norm.bw
 longLabel my cuttag data
@@ -76,6 +76,8 @@ shortLabel my cuttag
 visibility full
 autoScale on
 maxHeightPixels 50:32:8
+
+see more at:https://genome-asia.ucsc.edu/goldenPath/help/trackDb/trackDbDoc.html#Common_Settings
 
 download the new files according the reported error information:
 rsync -avP --delete --max-delete=20 rsync://hgdownload.soe.ucsc.edu/mysql/hg38 /my/data/path/
