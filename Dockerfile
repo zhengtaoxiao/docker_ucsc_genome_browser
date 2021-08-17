@@ -9,7 +9,7 @@ ENV DEBIAN_FRONTEND noninteractive
 #
 RUN apt-get update && apt-get install -y git build-essential rsync \
     apache2 mysql-client-5.7 mysql-client-core-5.7 libcurl4 \
-    libpng-dev libssl-dev openssl libmysqlclient-dev && \
+    libpng-dev libssl-dev openssl libmysqlclient-dev ghostscript && \
     apt-get clean
 
 #
@@ -33,7 +33,7 @@ RUN { \
         echo 'db.user=admin'; \
         echo 'db.password=admin'; \
         echo 'db.trackDb=trackDb'; \
-        echo 'defaultGenome=Human'; \
+        echo 'defaultGenome=Mouse'; \
         echo 'central.db=hgcentral'; \
         echo 'central.host=gbdb'; \
         echo 'central.user=admin'; \
